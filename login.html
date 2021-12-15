@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title> 
+
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+   <header class="header">
+    <nav class="nav">
+      <div class="logo"><a href="#"><img  src="img/MEA_logo.jpg" alt="MEA_logo"  ></a></div>
+      
+        <div class="navBar">
+          <div><a href="Index.html">Home</a> </div>
+          <div><a target="_blank" href="https://www.google.com/maps/place/HiB+Petrol+-+Bibaj/@42.370946,21.201481,157m/data=!3m1!1e3!4m5!3m4!1s0x13547d594f1be4dd:0x46d50595f9ff39c7!8m2!3d42.371163!4d21.2009026">Location</a>  </div>
+          <div><a href="about.html">About us</a> </div>
+          <div><a href="contact_us.html">Contact Us</a>
+          </div>
+          </div>
+        </div>
+          <a href="login.html" class="button"><button>Log in </button></a>
+    </nav>  
+  </header>
+    <div class="container">
+        <form class="form" id="login">
+            <h1 class="form_title">Login</h1>
+            <div class="form_message form__message--error"></div>
+            <div class="form_input-group">
+                <input type="text" class="form_input" autofocus placeholder="Username or email">
+                <div class="form_input-error-message"></div>
+            </div>
+            <div class="form_input-group">
+                <input type="password" class="form_input" autofocus placeholder="Password">
+                <div class="form_input-error-message"></div>
+            </div>
+            <button class="form_button" type="submit">Continue</button>
+            <p class="form_text">
+                <a href="#" class="form_link">Forgot your password?</a>
+            </p>
+            <p class="form_text">
+                <a class="form_link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+            </p>
+        </form>
+        <form class="form form--hidden" id="createAccount">
+            <h1 class="form_title">Create Account</h1>
+            <div class="form_message form_message--error"></div>
+            <div class="form_input-group">
+                <input type="text" id="signupUsername" class="form_input" autofocus placeholder="Username">
+                <div class="form_input-error-message"></div>
+            </div>
+            <div class="form_input-group">
+                <input type="text" class="form_input" autofocus placeholder="Email Address">
+                <div class="form_input-error-message"></div>
+            </div>
+            <div class="form_input-group">
+                <input type="password" class="form_input" autofocus placeholder="Password">
+                <div class="form_input-error-message"></div>
+            </div>
+            <div class="form_input-group">
+                <input type="password" class="form_input" autofocus placeholder="Confirm password">
+                <div class="form_input-error-message"></div>
+            </div>
+            <button class="form_button" type="submit">Continue</button>
+            <p class="form_text">
+                <a class="form_link" href="./" id="linkLogin">Already have an account? Log in</a>
+            </p>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

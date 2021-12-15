@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
 header {
     background-color: rgb(255, 255, 255);
     position: relative;
@@ -5,6 +7,7 @@ header {
     top: 0;
     left: 0;
     border-bottom: solid 1px rgba(40, 42, 53, 0.39);
+    font-family: 'Poppins', sans-serif;
 }
 
 .nav {
@@ -20,7 +23,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 30%;
+    width: 40%;
     padding-top: 10px;
 }
 
@@ -41,7 +44,7 @@ button {
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
+    transition: all 0.3s ease-in-out 0s;
     color: whitesmoke;
     text-decoration: none;
     font-weight: bold;
@@ -54,18 +57,27 @@ button {
     color: rgb(40, 42, 53);
     /*#edf0f1;*/
     text-decoration: none;
+
 }
 
 button:hover {
-    background-color: #007c25;
+    background-color: #007f67;
     color: white;
 }
 
 .navBar a {
-    transition: all 0.3s ease 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 .navBar a:hover {
     color: #00a933;
 }
 
+@media (max-width:900px) {
+
+    .navBar {
+        width: 60%;
+    }
+
+
+}
