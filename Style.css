@@ -1,76 +1,62 @@
-body {
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+* {
   margin: 0;
   padding: 0;
-  background-color: rgb(40, 42, 53);;
-  font-family: Verdana,sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  top: 0;
+  /* background-color: rgb(40, 42, 53); */
+  /* font-family: Verdana, sans-serif; */
   line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+
 }
-li, a , button {
-  
-  font-weight: bold;
-  font-size: 16px;
-  color:  rgb(40, 42, 53);   
-           /*#edf0f1;*/
-  text-decoration: none;
-}
-li{
-  float: left;
-  padding: 0 20px;
-}
-header{
+
+.mea_pres {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4px 10%;
-  background-color: white;
-  padding-left: 30px;
-  padding-right: 30px;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 70px;
+}
 
-}
-.logo {
-  cursor: pointer;
-  margin-right: auto;
-  object-fit: scale-down;
-  position: relative;
-  width: 100px;
 
-}
-.nav-border{
-  display: inline-block;
-  padding: 0px 20px;
-  list-style: none;
-}
-.nav-border li a{
-  transition: all 0.3s ease 0s;
-}
-.nav-border li a:hover{
-  color: #00a933;
-}
-button{
-  padding: 9px 25px;
-  background-color:#11a73eee ;
-  border: none;
+.mea_pres img {
+  margin-top: 2%;
+  width: 43rem;
+  height: 100%;
   border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  color:whitesmoke;
+  border-color: none;
+  box-shadow: 1px 2px 10px 11px white;
 }
-button:hover {
-  background-color: #007c25 ;
+
+.card {
+  padding: 3%;
+  width: 30%;
+  height: 40%;
   color: rgb(255, 255, 255);
+  border-color: rgba(15, 168, 56, 0.815);
+  background-color: rgba(15, 168, 56, 0.815);
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  margin: 6%;
+  box-shadow: 1px 2px 10px 20px rgba(15, 168, 56, 0.815);
 }
 
+@media (max-width:860px) {
+  .mea_pres {
+    flex-wrap: wrap;
+  }
 
+  .card {
 
+    width: 90%;
+  }
 
-
-
-
-
-
-
-
-
-
-
+  .mea_pres img {
+    width: 30rem;
+  }
+}
