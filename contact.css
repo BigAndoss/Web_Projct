@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 body {
@@ -72,7 +72,7 @@ textarea :hover {
 .contact textarea {
     height: 100px;
     max-width: 100%;
-    
+
 }
 
 .contact button {
@@ -92,8 +92,9 @@ textarea :hover {
     transition: background-color 0.3s ease-in-out 0s;
 }
 
-.contact input, textarea:focus
- {
+.contact input,
+textarea:focus {
     outline: 0;
     border: 1px solid #aaa;
 }
+

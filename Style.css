@@ -3,17 +3,13 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
 body {
   top: 0;
-  /* background-color: rgb(40, 42, 53); */
-  /* font-family: Verdana, sans-serif; */
   line-height: 1.5;
- 
-
 }
 
 .mea_pres {
@@ -60,4 +56,16 @@ body {
   .mea_pres img {
     width: 30rem;
   }
+}
+
+
+
+#active::after {
+  content: '';
+  display: flex;
+  margin-left: -10%;
+  width: 120%;
+  height: 10%;
+  border-radius: 10px;
+  background: #11a73eee;
 }
