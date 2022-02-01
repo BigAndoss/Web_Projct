@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.register {
+    width: 30%;
+    height: 100%;
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.register form input {
+    width: 70%;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 5%;
+    margin-left: 10%;
+    border-radius: 50px;
+    color: #000000;
+    background: transparent;
+    border: 1px #6284f0 solid;
+    font-family: "Courier New";
+    font-size: 18px;
+    animation-name: inputColors;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+.registerBtnDiv {
+    width: 70%;
+    margin-left: 10%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#registerLink {
+    text-decoration: none;
+    color: #860c70;
+    cursor: pointer;
+}
+
+#registerButton {
+    animation-name: registerbtn;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    color: #261a72;
+    border: 1px solid #261a72;
+    height: 50%;
+    margin-left: 0;
+}
+
+#registerButton:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #000000;
+    font-family: "Courier New";
+    font-size: 18px;
+}
+
+.login {
+    width: 30%;
+    height: 100%;
+}
+
+.login form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.login form input {
+    width: 70%;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 5%;
+    margin-left: 10%;
+    border-radius: 50px;
+    color: #000000;
+    background: transparent;
+    border: 1px #6284f0 solid;
+    font-family: "Courier New";
+    font-size: 18px;
+    animation-name: inputColors;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    margin-bottom: 5%;
+}
+
+.login form>label {
+    color: red;
+    margin-bottom: 5%;
+    margin-left: 0;
+    margin-left: 15%;
+}
+
+.loginBtnDiv {
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 70%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#loginButton {
+    animation-name: registerbtn;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    color: #261a72;
+    border: 1px solid #261a72;
+    height: 50%;
+    margin-left: 0;
+}
+
+#loginButton:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#loginLink {
+    text-decoration: none;
+    color: #860c70;
+    cursor: pointer;
+}
+
+.rgstrDiv label {
+    color: #261a72;
+}
+
+@keyframes inputColors {
+    0% {
+        border: 1px #6284f0 solid;
+    }
+
+    25% {
+        border: 1px #261a72 solid;
+    }
+
+    50% {
+        border: 1px #860c70 solid;
+    }
+
+    75% {
+        border: 1px #be52f0 solid;
+    }
+}
+
+@keyframes registerbtn {
+    from {
+        color: #261a72;
+        border: 1px solid #261a72;
+    }
+
+    to {
+        color: #6284f0;
+        border: 1px solid #6284f0;
+    }
+}
+
+
+
+/*SHOW & HIDE*/
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,30 @@
+.team {
+    margin: 2% 0 9%;
+    /* margin: 9%; */
+}
+
+.photos img {
+    width: 30rem;
+    height: auto;
+    border-radius: 10%;
+}
+.photos {
+ display: flex;
+ justify-content: center;
+
+}
+
+.team h1 {
+    display: flex;
+    justify-content: center;
+    padding: 0 50%;
+    margin-bottom: 3%;
+    white-space: nowrap;
+    background-color: rgba(245, 245, 245, 0.952);
+}
+
+.profile {
+    position: relative;
+    margin: 0 10px;
+}
+
