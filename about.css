@@ -1,7 +1,7 @@
 
 .grid-1 {
     display: grid;
-    margin: 0% 5% 5%;
+    margin: 2% 10% 5%;
     grid-template-columns: 3fr 3fr;
     grid-row: 100px;
     grid-column: 400px;
@@ -9,23 +9,20 @@
     grid-row-gap: 20px;
 }
 
-.photo img,
-.photo2 img {
+.photo img{
 
     width: 33rem;
     height: 100%;
-    border-radius: 5px;
+    border-radius: 5%;
     border-color: none;
     box-shadow: 1px 2px 10px 11px white;
 
 }
 
 .pg,
-.photo,
-.photo2 {
-
+.photo
+ {
     padding: 20px;
-    border-radius: 10px;
     color: rgb(37, 37, 37);
     display: flex;
     align-items: center;
@@ -34,6 +31,9 @@
 
 }
 
+#work{
+    width: 70%;
+}
 
 #about {
     margin-top: 2%;
@@ -43,4 +43,8 @@
     margin-bottom: 10px;
     white-space: nowrap;
     background-color: rgba(245, 245, 245, 0.952);
+}
+#team{
+    text-decoration: none;
+    color: rgb(21, 173, 47);
 }
