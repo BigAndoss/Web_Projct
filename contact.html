@@ -9,12 +9,14 @@
 <body>
     <header class="header">
     <nav class="nav">
-      <div class="logo"><a href="#"><img  src="img/MEA_logo.jpg" alt="MEA_logo"  ></a></div>
+      <div class="logo"><a href="#"><img  src="img/PNG logo.png" alt="MEA_logo"  ></a></div>
       
         <div class="navBar">
           <div><a href="Index.html">Home</a> </div>
-          <div><a target="_blank" href="https://www.google.com/maps/place/HiB+Petrol+-+Bibaj/@42.370946,21.201481,157m/data=!3m1!1e3!4m5!3m4!1s0x13547d594f1be4dd:0x46d50595f9ff39c7!8m2!3d42.371163!4d21.2009026">Location</a>  </div>
+          <div><a target="_blank" href="https://www.google.com/maps/place/Mbrojtja+e+Ambientit/@42.3710962,21.199601,17z/data=!3m1!4b1!4m5!3m4!1s0x13547dba0a090c11:0xbd2d5cdba67bf3ea!8m2!3d42.3710923!4d21.2017897">Location</a>  </div>
           <div><a id="active" href="contact.html">Contact Us</a>
+          </div>
+          <div><a href="about.html">About Us</a>
           </div>
           </div>
         </div>
@@ -22,24 +24,26 @@
     </nav>  
   </header>
 
-  <div class="container">  
-  <form   class="contact"  action="" method="post">
+  <div class="container-Contact">  
+  <form  name="contact" class="contact"  action="" 
+  onsubmit="return validateForm()" method="post">
     <h3>Na kontaktoni</h3>
     <h4>Dergoni mesazh tek ne:</h4>
     <fieldset>
-      <input placeholder="Emri" type="text"  required autofocus>
+      <input placeholder="Emri" type="text" name="Emri"  autofocus>
     </fieldset>
     <fieldset>
-      <input placeholder="Mbiemri" type="text"  required autofocus>
+      <input placeholder="Mbiemri" name="mbiemri" type="text"   autofocus>
     </fieldset>
     <fieldset>
-      <input placeholder="Email" type="email"  required>
+      <input placeholder="Email" type="email"
+      name="email"  >
     </fieldset>
     <fieldset>
-      <input placeholder="Numri i telefonit (opsional)" type="tel" required>
+      <input type="tel" placeholder="Numri i telefonit (opsional)" type="tel" >
     </fieldset>
     <fieldset>
-      <textarea placeholder="Shkruani mesazhin ketu...."  required></textarea>
+      <textarea placeholder="Shkruani mesazhin ketu...."   name="msg"></textarea>
     </fieldset>
     <fieldset>
       <button name="submit" type="submit" id="contact-submit">Dergo</button>
@@ -48,6 +52,7 @@
   </form>
 </div>
    
+  <script src="contact_val.js"></script>
 
 </body>
 </html>
